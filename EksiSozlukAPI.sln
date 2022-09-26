@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2A65782A-D546-47B5-86A7-C2C6DFD1656C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.Application", "Core\EksiSozlukAPI.Application\EksiSozlukAPI.Application.csproj", "{BEF73CA7-2669-4AA3-9153-40032CB8C696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Application", "Core\EksiSozlukAPI.Application\EksiSozlukAPI.Application.csproj", "{BEF73CA7-2669-4AA3-9153-40032CB8C696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.Domain", "Core\EksiSozlukAPI.Domain\EksiSozlukAPI.Domain.csproj", "{0E87CC42-BA7E-4FD1-9216-45B34DF66804}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Domain", "Core\EksiSozlukAPI.Domain\EksiSozlukAPI.Domain.csproj", "{0E87CC42-BA7E-4FD1-9216-45B34DF66804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.Persistence", "Infrastructure\EksiSozlukAPI.Persistence\EksiSozlukAPI.Persistence.csproj", "{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Persistence", "Infrastructure\EksiSozlukAPI.Persistence\EksiSozlukAPI.Persistence.csproj", "{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.API", "Presentation\EksiSozlukAPI.API\EksiSozlukAPI.API.csproj", "{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{BEF73CA7-2669-4AA3-9153-40032CB8C696} = {80D64A3D-6DB3-4D75-951C-8808AF6C537F}
 		{0E87CC42-BA7E-4FD1-9216-45B34DF66804} = {80D64A3D-6DB3-4D75-951C-8808AF6C537F}
 		{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD} = {9AAC5FC0-0A18-42F9-80F8-47B375EBAF75}
+		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3} = {2A65782A-D546-47B5-86A7-C2C6DFD1656C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D35586B6-93C5-4E78-AF58-EFEEF1B17E59}

@@ -10,6 +10,6 @@ namespace EksiSozlukAPI.Domain.Entities
     public class Channel : BaseEntity
     {
         public string Name { get; set; }
-        public ICollection<Title> Titles{ get; set; }
+        public ICollection<Title> Titles { get; set; }
     }
 }

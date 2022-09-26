@@ -1,0 +1,12 @@
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\bin\Debug\net6.0\EksiSozlukAPI.Domain.deps.json
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\bin\Debug\net6.0\EksiSozlukAPI.Domain.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\bin\Debug\net6.0\EksiSozlukAPI.Domain.pdb
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.AssemblyInfo.cs
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\refint\EksiSozlukAPI.Domain.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\EksiSozlukAPI.Domain.pdb
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Core\EksiSozlukAPI.Domain\obj\Debug\net6.0\ref\EksiSozlukAPI.Domain.dll
