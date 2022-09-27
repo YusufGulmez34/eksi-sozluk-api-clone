@@ -38,3 +38,9 @@ C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\Eksi
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Common.Gdpr.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Core.Models.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Core.Storage.EFCore.Common.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Core.Storage.EFCore.PostgreSql.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.EFCore.PostgreSql.Conventions.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Pagination.Models.dll

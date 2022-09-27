@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Domain", "Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Persistence", "Infrastructure\EksiSozlukAPI.Persistence\EksiSozlukAPI.Persistence.csproj", "{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.API", "Presentation\EksiSozlukAPI.API\EksiSozlukAPI.API.csproj", "{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.API", "Presentation\EksiSozlukAPI.API\EksiSozlukAPI.API.csproj", "{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
