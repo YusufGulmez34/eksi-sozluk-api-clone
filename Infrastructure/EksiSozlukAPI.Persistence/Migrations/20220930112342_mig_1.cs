@@ -10,150 +10,164 @@ namespace EksiSozlukAPI.Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "channel",
+                name: "channels",
                 columns: table => new
                 {
                     ıd = table.Column<Guid>(type: "uuid", nullable: false),
                     name = table.Column<string>(type: "text", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    deleted_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_channel", x => x.ıd);
+                    table.PrimaryKey("pk_channels", x => x.ıd);
                 });
 
             migrationBuilder.CreateTable(
-                name: "role",
+                name: "roles",
                 columns: table => new
                 {
                     ıd = table.Column<Guid>(type: "uuid", nullable: false),
                     name = table.Column<string>(type: "text", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    deleted_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_role", x => x.ıd);
+                    table.PrimaryKey("pk_roles", x => x.ıd);
                 });
 
             migrationBuilder.CreateTable(
-                name: "title",
-                columns: table => new
-                {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
-                    name = table.Column<string>(type: "text", nullable: false),
-                    channel_ıd = table.Column<Guid>(type: "uuid", nullable: false),
-                    entry_count = table.Column<int>(type: "integer", nullable: false),
-                    created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    deleted_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("pk_title", x => x.ıd);
-                    table.ForeignKey(
-                        name: "fk_title_channel_channel_ıd",
-                        column: x => x.channel_ıd,
-                        principalTable: "channel",
-                        principalColumn: "ıd",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "user",
+                name: "users",
                 columns: table => new
                 {
                     ıd = table.Column<Guid>(type: "uuid", nullable: false),
                     nickname = table.Column<string>(type: "text", nullable: false),
                     email = table.Column<string>(type: "text", nullable: false),
                     password = table.Column<string>(type: "text", nullable: false),
-                    role_ıd = table.Column<Guid>(type: "uuid", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    deleted_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_user", x => x.ıd);
+                    table.PrimaryKey("pk_users", x => x.ıd);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "titles",
+                columns: table => new
+                {
+                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    name = table.Column<string>(type: "text", nullable: false),
+                    entry_count = table.Column<int>(type: "integer", nullable: false),
+                    channel_ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("pk_titles", x => x.ıd);
                     table.ForeignKey(
-                        name: "fk_user_role_role_ıd",
-                        column: x => x.role_ıd,
-                        principalTable: "role",
+                        name: "fk_titles_channels_channel_ıd",
+                        column: x => x.channel_ıd,
+                        principalTable: "channels",
                         principalColumn: "ıd",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "entry",
+                name: "user_roles",
                 columns: table => new
                 {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
-                    message = table.Column<string>(type: "text", nullable: false),
-                    like = table.Column<int>(type: "integer", nullable: false),
-                    dislike = table.Column<int>(type: "integer", nullable: false),
-                    title_ıd = table.Column<Guid>(type: "uuid", nullable: false),
                     user_ıd = table.Column<Guid>(type: "uuid", nullable: false),
-                    created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    deleted_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    role_ıd = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_entry", x => x.ıd);
+                    table.PrimaryKey("PK_user_roles", x => new { x.user_ıd, x.role_ıd });
                     table.ForeignKey(
-                        name: "fk_entry_title_title_ıd",
-                        column: x => x.title_ıd,
-                        principalTable: "title",
+                        name: "fk_user_roles_roles_role_ıd",
+                        column: x => x.role_ıd,
+                        principalTable: "roles",
                         principalColumn: "ıd",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "fk_entry_user_user_ıd",
+                        name: "fk_user_roles_users_user_ıd",
                         column: x => x.user_ıd,
-                        principalTable: "user",
+                        principalTable: "users",
+                        principalColumn: "ıd",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "entries",
+                columns: table => new
+                {
+                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    body = table.Column<string>(type: "text", nullable: false),
+                    fav_count = table.Column<int>(type: "integer", nullable: false),
+                    title_ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    user_ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("pk_entries", x => x.ıd);
+                    table.ForeignKey(
+                        name: "fk_entries_titles_title_ıd",
+                        column: x => x.title_ıd,
+                        principalTable: "titles",
+                        principalColumn: "ıd",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "fk_entries_users_user_ıd",
+                        column: x => x.user_ıd,
+                        principalTable: "users",
                         principalColumn: "ıd",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "ıx_entry_title_ıd",
-                table: "entry",
+                name: "ıx_entries_title_ıd",
+                table: "entries",
                 column: "title_ıd");
 
             migrationBuilder.CreateIndex(
-                name: "ıx_entry_user_ıd",
-                table: "entry",
+                name: "ıx_entries_user_ıd",
+                table: "entries",
                 column: "user_ıd");
 
             migrationBuilder.CreateIndex(
-                name: "ıx_title_channel_ıd",
-                table: "title",
+                name: "ıx_titles_channel_ıd",
+                table: "titles",
                 column: "channel_ıd");
 
             migrationBuilder.CreateIndex(
-                name: "ıx_user_role_ıd",
-                table: "user",
+                name: "ıx_user_roles_role_ıd",
+                table: "user_roles",
                 column: "role_ıd");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "entry");
+                name: "entries");
 
             migrationBuilder.DropTable(
-                name: "title");
+                name: "user_roles");
 
             migrationBuilder.DropTable(
-                name: "user");
+                name: "titles");
 
             migrationBuilder.DropTable(
-                name: "channel");
+                name: "roles");
 
             migrationBuilder.DropTable(
-                name: "role");
+                name: "users");
+
+            migrationBuilder.DropTable(
+                name: "channels");
         }
     }
 }

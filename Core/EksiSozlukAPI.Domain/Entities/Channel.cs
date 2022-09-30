@@ -11,5 +11,9 @@ namespace EksiSozlukAPI.Domain.Entities
     {
         public string Name { get; set; }
         public ICollection<Title> Titles { get; set; }
+        public Channel()
+        {
+            Titles = new List<Title>();
+        }
     }
 }

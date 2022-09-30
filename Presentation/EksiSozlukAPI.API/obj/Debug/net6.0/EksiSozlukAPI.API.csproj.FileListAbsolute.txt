@@ -44,3 +44,17 @@ C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\Eksi
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Core.Storage.EFCore.PostgreSql.dll
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.EFCore.PostgreSql.Conventions.dll
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\cloudscribe.Pagination.Models.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\EksiSozlukAPI.Application.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\EksiSozlukAPI.Application.pdb
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\MediatR.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Presentation\EksiSozlukAPI.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

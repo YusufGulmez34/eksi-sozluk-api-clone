@@ -15,3 +15,5 @@ C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\Ek
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.pdb
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.genruntimeconfig.cache
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\ref\EksiSozlukAPI.Persistence.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Application.dll
+C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Application.pdb

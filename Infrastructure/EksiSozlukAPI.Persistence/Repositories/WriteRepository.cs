@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace EksiSozlukAPI.Persistence.Repositories
 {
-    public class WriteRepository<T> : IWriteRepository<T> where T : BaseEntity
+    public abstract class WriteRepository<T> : IWriteRepository<T> where T : BaseEntity
     {
 
         private readonly EksiSozlukAPIDbContext _context;
@@ -22,8 +22,9 @@ namespace EksiSozlukAPI.Persistence.Repositories
         }
 
         public DbSet<T> Table => _context.Set<T>();
+        public EksiSozlukAPIDbContext Context => _context;
 
-        public async Task<bool> AddAsync(T entity)
+        public virtual async Task<bool> AddAsync(T entity)
         {
             EntityEntry<T> entry = await Table.AddAsync(entity);            
             return entry.State == EntityState.Added;

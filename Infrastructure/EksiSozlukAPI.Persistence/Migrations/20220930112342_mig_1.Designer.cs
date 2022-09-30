@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EksiSozlukAPI.Persistence.Migrations
 {
     [DbContext(typeof(EksiSozlukAPIDbContext))]
-    [Migration("20220926190139_mig_1")]
+    [Migration("20220930112342_mig_1")]
     partial class mig_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,10 +35,6 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_date");
 
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("deleted_date");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
@@ -49,9 +45,9 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnName("updated_date");
 
                     b.HasKey("Id")
-                        .HasName("pk_channel");
+                        .HasName("pk_channels");
 
-                    b.ToTable("channel");
+                    b.ToTable("channels");
                 });
 
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Entry", b =>
@@ -61,26 +57,18 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnType("uuid")
                         .HasColumnName("ıd");
 
+                    b.Property<string>("Body")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("body");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_date");
 
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("deleted_date");
-
-                    b.Property<int>("Dislike")
+                    b.Property<int>("FavCount")
                         .HasColumnType("integer")
-                        .HasColumnName("dislike");
-
-                    b.Property<int>("Like")
-                        .HasColumnType("integer")
-                        .HasColumnName("like");
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("message");
+                        .HasColumnName("fav_count");
 
                     b.Property<Guid>("TitleId")
                         .HasColumnType("uuid")
@@ -95,15 +83,15 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnName("user_ıd");
 
                     b.HasKey("Id")
-                        .HasName("pk_entry");
+                        .HasName("pk_entries");
 
                     b.HasIndex("TitleId")
-                        .HasDatabaseName("ıx_entry_title_ıd");
+                        .HasDatabaseName("ıx_entries_title_ıd");
 
                     b.HasIndex("UserId")
-                        .HasDatabaseName("ıx_entry_user_ıd");
+                        .HasDatabaseName("ıx_entries_user_ıd");
 
-                    b.ToTable("entry");
+                    b.ToTable("entries");
                 });
 
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Role", b =>
@@ -117,10 +105,6 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_date");
 
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("deleted_date");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
@@ -131,9 +115,9 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnName("updated_date");
 
                     b.HasKey("Id")
-                        .HasName("pk_role");
+                        .HasName("pk_roles");
 
-                    b.ToTable("role");
+                    b.ToTable("roles");
                 });
 
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Title", b =>
@@ -151,10 +135,6 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_date");
 
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("deleted_date");
-
                     b.Property<int>("EntryCount")
                         .HasColumnType("integer")
                         .HasColumnName("entry_count");
@@ -169,12 +149,12 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnName("updated_date");
 
                     b.HasKey("Id")
-                        .HasName("pk_title");
+                        .HasName("pk_titles");
 
                     b.HasIndex("ChannelId")
-                        .HasDatabaseName("ıx_title_channel_ıd");
+                        .HasDatabaseName("ıx_titles_channel_ıd");
 
-                    b.ToTable("title");
+                    b.ToTable("titles");
                 });
 
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.User", b =>
@@ -187,10 +167,6 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("created_date");
-
-                    b.Property<DateTime?>("DeletedDate")
-                        .HasColumnType("timestamp with time zone")
-                        .HasColumnName("deleted_date");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -207,38 +183,49 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasColumnType("text")
                         .HasColumnName("password");
 
-                    b.Property<Guid>("RoleId")
-                        .HasColumnType("uuid")
-                        .HasColumnName("role_ıd");
-
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("updated_date");
 
                     b.HasKey("Id")
-                        .HasName("pk_user");
+                        .HasName("pk_users");
+
+                    b.ToTable("users");
+                });
+
+            modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.UserRole", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("user_ıd");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("role_ıd");
+
+                    b.HasKey("UserId", "RoleId");
 
                     b.HasIndex("RoleId")
-                        .HasDatabaseName("ıx_user_role_ıd");
+                        .HasDatabaseName("ıx_user_roles_role_ıd");
 
-                    b.ToTable("user");
+                    b.ToTable("user_roles");
                 });
 
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Entry", b =>
                 {
                     b.HasOne("EksiSozlukAPI.Domain.Entities.Title", "Title")
-                        .WithMany()
+                        .WithMany("Entries")
                         .HasForeignKey("TitleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_entry_title_title_ıd");
+                        .HasConstraintName("fk_entries_titles_title_ıd");
 
                     b.HasOne("EksiSozlukAPI.Domain.Entities.User", "User")
                         .WithMany("Entries")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_entry_user_user_ıd");
+                        .HasConstraintName("fk_entries_users_user_ıd");
 
                     b.Navigation("Title");
 
@@ -252,21 +239,30 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasForeignKey("ChannelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_title_channel_channel_ıd");
+                        .HasConstraintName("fk_titles_channels_channel_ıd");
 
                     b.Navigation("Channel");
                 });
 
-            modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.User", b =>
+            modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.UserRole", b =>
                 {
                     b.HasOne("EksiSozlukAPI.Domain.Entities.Role", "Role")
-                        .WithMany()
+                        .WithMany("UserRoles")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_user_role_role_ıd");
+                        .HasConstraintName("fk_user_roles_roles_role_ıd");
+
+                    b.HasOne("EksiSozlukAPI.Domain.Entities.User", "User")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("fk_user_roles_users_user_ıd");
 
                     b.Navigation("Role");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Channel", b =>
@@ -274,9 +270,21 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Navigation("Titles");
                 });
 
+            modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Role", b =>
+                {
+                    b.Navigation("UserRoles");
+                });
+
+            modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.Title", b =>
+                {
+                    b.Navigation("Entries");
+                });
+
             modelBuilder.Entity("EksiSozlukAPI.Domain.Entities.User", b =>
                 {
                     b.Navigation("Entries");
+
+                    b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618
         }

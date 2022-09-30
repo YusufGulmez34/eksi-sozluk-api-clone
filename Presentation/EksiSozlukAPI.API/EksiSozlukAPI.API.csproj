@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\EksiSozlukAPI.Persistence\EksiSozlukAPI.Persistence.csproj" />
   </ItemGroup>
 
