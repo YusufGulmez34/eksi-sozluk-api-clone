@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using EksiSozlukAPI.Application.Features.Commands.User.CreateUser;
 using EksiSozlukAPI.Application.Repositories.User;
-using EksiSozlukAPI.Application.Services.User;
+using EksiSozlukAPI.Application.Services;
 using E = EksiSozlukAPI.Domain.Entities;
 
-namespace EksiSozlukAPI.Persistence.Services.User
+namespace EksiSozlukAPI.Persistence.Services
 {
     public class UserService : IUserService
     {

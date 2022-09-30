@@ -1,6 +1,6 @@
 ﻿using EksiSozlukAPI.Application.Features.Commands.Title.CreateTitle;
 
-namespace EksiSozlukAPI.Application.Services.Title
+namespace EksiSozlukAPI.Application.Services
 {
     public interface ITitleService
     {

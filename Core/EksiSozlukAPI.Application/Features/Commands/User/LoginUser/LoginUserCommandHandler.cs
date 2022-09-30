@@ -1,12 +1,6 @@
 ﻿using EksiSozlukAPI.Application.DTOs;
 using EksiSozlukAPI.Application.Services;
-using EksiSozlukAPI.Application.Services.User;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EksiSozlukAPI.Application.Features.Commands.User.LoginUser
 {

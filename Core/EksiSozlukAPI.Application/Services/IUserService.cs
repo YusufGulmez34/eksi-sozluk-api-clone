@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EksiSozlukAPI.Application.Services.User
+namespace EksiSozlukAPI.Application.Services
 {
     public interface IUserService
     {

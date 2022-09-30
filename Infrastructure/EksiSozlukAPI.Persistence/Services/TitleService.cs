@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
 using EksiSozlukAPI.Application.Features.Commands.Title.CreateTitle;
 using EksiSozlukAPI.Application.Repositories.Title;
-using EksiSozlukAPI.Application.Services.Title;
+using EksiSozlukAPI.Application.Services;
 using E = EksiSozlukAPI.Domain.Entities;
 
-namespace EksiSozlukAPI.Persistence.Services.Title
+namespace EksiSozlukAPI.Persistence.Services
 {
     public class TitleService : ITitleService
     {

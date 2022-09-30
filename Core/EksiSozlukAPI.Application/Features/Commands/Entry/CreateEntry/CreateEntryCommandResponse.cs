@@ -13,14 +13,14 @@ namespace EksiSozlukAPI.Application.Features.Commands.Entry.CreateEntry
         }
     }
 
-    public class SuccessCreateEntryCommandResponse : Response
+    public class SuccessCreateEntryCommandResponse : CreateEntryCommandResponse
     {
         public SuccessCreateEntryCommandResponse(string message) : base(true, message)
         {
         }
     }
 
-    public class ErrorCreateEntryCommandResponse : Response
+    public class ErrorCreateEntryCommandResponse : CreateEntryCommandResponse
     {
         public ErrorCreateEntryCommandResponse(string message) : base(false, message)
         {

@@ -1,4 +1,4 @@
-﻿using EksiSozlukAPI.Application.Services.User;
+﻿using EksiSozlukAPI.Application.Services;
 using MediatR;
 
 namespace EksiSozlukAPI.Application.Features.Commands.User.CreateUser
