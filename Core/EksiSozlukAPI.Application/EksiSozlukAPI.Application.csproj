@@ -16,8 +16,4 @@
     <ProjectReference Include="..\EksiSozlukAPI.Domain\EksiSozlukAPI.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Queries\" />
-  </ItemGroup>
-
 </Project>

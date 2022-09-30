@@ -1,14 +1,14 @@
 ﻿using EksiSozlukAPI.Application.Features.Commands.Entry.CreateEntry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using EksiSozlukAPI.Application.Features.Commands.Entry.FavEntry;
+using EksiSozlukAPI.Application.Features.Queries.Entry.GetEntryListByTitleId;
 
 namespace EksiSozlukAPI.Application.Services
 {
     public interface IEntryService
     {
-        Task<CreateEntryCommandResponse> AddEntryAsync(CreateEntryCommandRequest request); 
+        Task<CreateEntryCommandResponse> AddEntryAsync(CreateEntryCommandRequest request);
+        Task<FavEntryCommandResponse> FavEntryAsync(FavEntryCommandRequest request);
+        Task<GetEntryListByTitleIdQueryResponse> GetEntryListByTitleId(GetEntryListByTitleIdQueryRequest request);
+
     }
 }
