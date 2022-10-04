@@ -1,0 +1,358 @@
+﻿++Solution 'EksiSozlukAPI' ‎(5 of 5 projects)
+i:{00000000-0000-0000-0000-000000000000}:EksiSozlukAPI.sln
+++ConsoleApp2
+i:{00000000-0000-0000-0000-000000000000}:ConsoleApp2
+++Dependencies
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>471
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:>341
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:>342
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>340
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:>654
+++Extensions
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\extensions\
+++EfFindService.cs
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\extensions\effindservice.cs
+++Migrations
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\migrations\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\migrations\
+++Program.cs
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\program.cs
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\program.cs
+++Analyzers
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:analyzers
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:analyzers
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:analyzers
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:analyzers
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:analyzers
+++Frameworks
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:frameworks
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:frameworks
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:frameworks
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:frameworks
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:frameworks
+++Packages
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:packages
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:packages
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:packages
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:packages
+++20220929180531_mig_1.cs
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\migrations\20220929180531_mig_1.cs
+++ExampleDbContextModelSnapshot.cs
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\migrations\exampledbcontextmodelsnapshot.cs
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.9\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\microsoft.netcore.app
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\microsoft.netcore.app
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\microsoft.netcore.app
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\microsoft.netcore.app
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\microsoft.netcore.app
+++AutoMapper (11.0.1)
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>715
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>683
+++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>713
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>680
+++Microsoft.EntityFrameworkCore (6.0.9)
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>712
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:>668
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>679
+++Microsoft.EntityFrameworkCore.Tools (6.0.9)
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>717
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>687
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:>739
+++Newtonsoft.Json (13.0.1)
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>714
+++Npgsql.EntityFrameworkCore.PostgreSQL (6.0.7)
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:>716
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>684
+++20220929180531_mig_1.Designer.cs
+i:{4be79d96-e12e-4aa5-8e5f-4f64c11fcc58}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\consoleapp2\migrations\20220929180531_mig_1.designer.cs
+++Core
+i:{00000000-0000-0000-0000-000000000000}:Core
+++EksiSozlukAPI.Application
+i:{80d64a3d-6db3-4d75-951c-8808af6c537f}:EksiSozlukAPI.Application
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\eksisozlukapi.application.csproj
+++MediatR (10.0.1)
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:>669
+++MediatR.Extensions.Microsoft.DependencyInjection (10.0.1)
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:>670
+++Projects
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:projects
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:projects
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:projects
+++DTOs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\dtos\
+++Token.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\dtos\token.cs
+++Features
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\
+++Commands
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\
+++Entry
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\entry\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\entry\
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\queries\entry\
+++CreateEntry
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\createentry\
+++CreateEntryCommandRequest.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\createentry\createentrycommandrequest.cs
+++CreateEntryCommandResponse.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\createentry\createentrycommandresponse.cs
+++Title
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\title\
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\title\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\title\
+++CreateTitle
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\title\createtitle\
+++CreateTitleCommandHandler.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\title\createtitle\createtitlecommandhandler.cs
+++CreateTitleCommandRequest.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\title\createtitle\createtitlecommandrequest.cs
+++CreateTitleCommandResponse.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\title\createtitle\createtitlecommandresponse.cs
+++User
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\user\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\user\
+++CreateUser
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\createuser\
+++CreateUserCommandHandler.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\createuser\createusercommandhandler.cs
+++CreateUserCommandRequest.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\createuser\createusercommandrequest.cs
+++CreateUserCommandResponse.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\createuser\createusercommandresponse.cs
+++LoginUser
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\loginuser\
+++LoginUserCommandHandler.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\loginuser\loginusercommandhandler.cs
+++LoginUserCommandRequest.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\loginuser\loginusercommandrequest.cs
+++LoginUserCommandResponse.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\user\loginuser\loginusercommandresponse.cs
+++Queries
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\queries\
+++Response.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\response.cs
+++ResponseData.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\responsedata.cs
+++Repositories
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\
+++Role
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\role\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\role\
+++IRoleReadRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\role\irolereadrepository.cs
+++ITitleWriteRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\title\ititlewriterepository.cs
+++IUserReadRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\user\iuserreadrepository.cs
+++IUserWriteRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\user\iuserwriterepository.cs
+++IReadRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\ireadrepository.cs
+++IRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\irepository.cs
+++IWriteRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\iwriterepository.cs
+++Services
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\services\
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\services\
+++ITitleService.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\services\ititleservice.cs
+++IUserService.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\services\iuserservice.cs
+++IAuthService.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\services\iauthservice.cs
+++ServiceRegistration.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\serviceregistration.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\serviceregistration.cs
+++EksiSozlukAPI.Domain
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\eksisozlukapi.domain.csproj
+i:{80d64a3d-6db3-4d75-951c-8808af6c537f}:EksiSozlukAPI.Domain
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\eksisozlukapi.domain.csproj
+++Entities
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\
+++Common
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\common\
+++BaseEntity.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\common\baseentity.cs
+++Channel.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\channel.cs
+++Entry.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\entry.cs
+++Role.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\role.cs
+++Title.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\title.cs
+++User.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\user.cs
+++UserRole.cs
+i:{0e87cc42-ba7e-4fd1-9216-45b34df66804}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.domain\entities\userrole.cs
+++Infrastructure
+i:{00000000-0000-0000-0000-000000000000}:Infrastructure
+++EksiSozlukAPI.Persistence
+i:{9aac5fc0-0a18-42f9-80f8-47b375ebaf75}:EksiSozlukAPI.Persistence
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\bin\debug\net6.0\eksisozlukapi.persistence.dll
+++Contexts
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\contexts\
+++EksiSozlukAPIDbContext.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\contexts\eksisozlukapidbcontext.cs
+++Mapping
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\mapping\
+++MappingProfile.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\mapping\mappingprofile.cs
+++20220930112342_mig_1.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\migrations\20220930112342_mig_1.cs
+++EksiSozlukAPIDbContextModelSnapshot.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\migrations\eksisozlukapidbcontextmodelsnapshot.cs
+++RoleReadRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\role\rolereadrepository.cs
+++TitleWriteRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\title\titlewriterepository.cs
+++UserReadRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\user\userreadrepository.cs
+++UserWriteRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\user\userwriterepository.cs
+++ReadRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\readrepository.cs
+++WriteRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\writerepository.cs
+++TitleService.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\services\titleservice.cs
+++UserService.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\services\userservice.cs
+++AuthService.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\services\authservice.cs
+++Configuration.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\configuration.cs
+++20220930112342_mig_1.Designer.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\migrations\20220930112342_mig_1.designer.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++cloudscribe.Core.Storage.EFCore.PostgreSql (6.0.1)
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>681
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.9)
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>685
+++Microsoft.Extensions.Configuration (6.0.1)
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>686
+++Microsoft.Extensions.Configuration.Json (6.0.0)
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:>682
+++Presentation
+i:{00000000-0000-0000-0000-000000000000}:Presentation
+++EksiSozlukAPI.API
+i:{2a65782a-d546-47b5-86a7-c2c6dfd1656c}:EksiSozlukAPI.API
+++Connected Services 
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:>655
+++Properties
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\properties\
+++Controllers
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\controllers\
+++AuthController.cs
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\controllers\authcontroller.cs
+++TitleController.cs
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\controllers\titlecontroller.cs
+++UserController.cs
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\controllers\usercontroller.cs
+++appsettings.json
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\appsettings.json
+++No service dependencies discovered
+++launchSettings.json
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\properties\launchsettings.json
+++appsettings.Development.json
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\microsoft.aspnetcore.app
+++Swashbuckle.AspNetCore (6.2.3)
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:>738
+++SQL Server Database
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:>906
+++SQL Server Database dependency is detected
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:>907
+++NewFolder
+++IEntryWriteRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\entry\ientrywriterepository.cs
+++IEntryReadRepositort.cs
+++IEntryReadRepository.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\repositories\entry\ientryreadrepositort.cs
+++EntryWriteRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\entry\entrywriterepository.cs
+++EntryReadRepository.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\repositories\entry\entryreadrepository.cs
+++eNTRY
+++IEntryService.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\services\ientryservice.cs
+++EntryService.cs
+i:{40205da3-8edf-48b0-a808-f7e56d5e3edd}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\infrastructure\eksisozlukapi.persistence\services\entryservice.cs
+++CreateEntryCommandHandler.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\createentry\createentrycommandhandler.cs
+++EntryController.cs
+i:{a298aada-efd9-4bcb-83bd-b4943ed0daf3}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\presentation\eksisozlukapi.api\controllers\entrycontroller.cs
+++FavToEntryCommandHandler.cs
+++FavEntry
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\faventry\
+++FavEntryCommandHandler.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\faventry\faventrycommandhandler.cs
+++FavEntryCommandResponse.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\faventry\faventrycommandresponse.cs
+++FavEntryCommandRequest.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\commands\entry\faventry\faventrycommandrequest.cs
+++GetEntryListByTitleId
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\queries\entry\getentrylistbytitleid\
+++GetEntryListByTitleIdQueryRequest.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\queries\entry\getentrylistbytitleid\getentrylistbytitleidqueryrequest.cs
+++GetEntryListByTitleIdQueryResponse.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\queries\entry\getentrylistbytitleid\getentrylistbytitleidqueryresponse.cs
+++EnryUser.cs
+++EntryUser.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\dtos\enryuser.cs
+++EntryTitle.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\dtos\entrytitle.cs
+++EntryListItem.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\dtos\entrylistitem.cs
+++GetEntryListByTitleIdQueryHandler.cs
+i:{bef73ca7-2669-4aa3-9153-40032cb8c696}:c:\users\walte\onedrive\masaüstü\ekşisözlük\eksisozlukapi\core\eksisozlukapi.application\features\queries\entry\getentrylistbytitleid\getentrylistbytitleidqueryhandler.cs
+++DTO.cs

@@ -1,5 +1,6 @@
 ﻿using EksiSozlukAPI.Application.Features.Commands.Entry.CreateEntry;
 using EksiSozlukAPI.Application.Features.Commands.Entry.FavEntry;
+using EksiSozlukAPI.Application.Features.Commands.Entry.UpdateEntryBody;
 using EksiSozlukAPI.Application.Features.Queries.Entry.GetEntryListByTitleId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -37,13 +38,22 @@ namespace EksiSozlukAPI.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet("titles/{TitleId}")]
-        public async Task<IActionResult> GetEntryListByTitleId([FromRoute] GetEntryListByTitleIdQueryRequest request)
+        [HttpGet]
+        public async Task<IActionResult> GetEntryListByTitleId([FromQuery] GetEntryListByTitleIdQueryRequest request)
         {
             GetEntryListByTitleIdQueryResponse response = await _mediator.Send(request);
 
             if (response == null) BadRequest();
 
+            return Ok(response);
+        }
+
+        [HttpPut("entries/{Id}")]
+        public async Task<IActionResult> UpdateEntryBody([FromRoute] Guid Id, [FromBody] string body)
+        {
+            UpdateEntryBodyCommandRequest request = new () { EntryId = Id, Body = body };
+            UpdateEntryBodyCommandResponse response = await _mediator.Send(request);
+            if(response == null) BadRequest();
             return Ok(response);
         }
     }

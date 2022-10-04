@@ -2,15 +2,15 @@
 
 namespace EksiSozlukAPI.Application.Features.Queries.Entry.GetEntryListByTitleId
 {
-    public class GetEntryListByTitleIdQueryResponse : ResponseData<List<EntryListItem>>
+    public class GetEntryListByTitleIdQueryResponse : ResponseData<PagedData<List<EntryListItem>>>
     {
-        public GetEntryListByTitleIdQueryResponse(List<EntryListItem> data, bool success, string message) : base(data, success, message)
+        public GetEntryListByTitleIdQueryResponse(PagedData<List<EntryListItem>> data, bool success, string message) : base(data, success, message)
         {
         }
     }
     public class SuccessGetEntryListByTitleIdQueryResponse : GetEntryListByTitleIdQueryResponse
     {
-        public SuccessGetEntryListByTitleIdQueryResponse(List<EntryListItem> data, string message) : base(data, true, message)
+        public SuccessGetEntryListByTitleIdQueryResponse(PagedData<List<EntryListItem>> data, string message) : base(data, true, message)
         {
         }
     }

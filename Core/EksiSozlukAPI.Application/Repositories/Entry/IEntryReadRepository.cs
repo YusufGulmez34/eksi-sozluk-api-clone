@@ -4,6 +4,6 @@ namespace EksiSozlukAPI.Application.Repositories.Entry
 {
     public interface IEntryReadRepository : IReadRepository<E.Entry>
     {
-        List<E.Entry> GetEntryListByTitleId(string titleId);
+        List<E.Entry> GetEntryListByTitleId(int pageNumber, int pageSize, string titleId);
     }
 }

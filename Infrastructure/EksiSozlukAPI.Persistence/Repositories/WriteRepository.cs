@@ -3,11 +3,6 @@ using EksiSozlukAPI.Domain.Entities.Common;
 using EksiSozlukAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EksiSozlukAPI.Persistence.Repositories
 {
@@ -62,6 +57,7 @@ namespace EksiSozlukAPI.Persistence.Repositories
 
         public bool Update(T entity)
         {
+            
             EntityEntry entry = Table.Update(entity);
             return entry.State == EntityState.Modified;
         }

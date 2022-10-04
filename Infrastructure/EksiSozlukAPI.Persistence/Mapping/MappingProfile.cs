@@ -4,7 +4,6 @@ using EksiSozlukAPI.Application.Features.Commands.Entry.CreateEntry;
 using EksiSozlukAPI.Application.Features.Commands.Title.CreateTitle;
 using EksiSozlukAPI.Application.Features.Commands.User.CreateUser;
 using EksiSozlukAPI.Domain.Entities;
-using EksiSozlukAPI.Domain.Entities.Common;
 
 namespace EksiSozlukAPI.Persistence.Mapping
 {

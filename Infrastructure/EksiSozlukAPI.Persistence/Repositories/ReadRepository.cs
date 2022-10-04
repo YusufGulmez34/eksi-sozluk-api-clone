@@ -1,4 +1,5 @@
-﻿using EksiSozlukAPI.Application.Repositories;
+﻿using EksiSozlukAPI.Application.DTOs;
+using EksiSozlukAPI.Application.Repositories;
 using EksiSozlukAPI.Domain.Entities.Common;
 using EksiSozlukAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -16,11 +17,10 @@ namespace EksiSozlukAPI.Persistence.Repositories
         }
 
         public DbSet<T> Table => _context.Set<T>();
-        public EksiSozlukAPIDbContext Context => _context; 
+        public EksiSozlukAPIDbContext Context => _context;
         public IQueryable<T> FindAll()
         {
-            
-            IQueryable<T>  query = Table.AsQueryable();
+            IQueryable<T> query = Table.AsQueryable();
             if (query == null || query.Count() == 0)
             {
                 return null;
@@ -57,5 +57,19 @@ namespace EksiSozlukAPI.Persistence.Repositories
             }
             return entity;
         }
+
+        public IQueryable<T> FindPaged(int pageNumber, int pageSize, Expression<Func<T, bool>> filter)
+        {
+            IQueryable<T> entity = Table.Where(filter).Skip((pageNumber-1) * pageSize).Take(pageSize);
+            if (entity == null)
+            {
+                return null;
+            }
+
+            return entity;
+
+
+        }
+
     }
 }

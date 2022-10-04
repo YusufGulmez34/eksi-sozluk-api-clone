@@ -9,6 +9,6 @@ namespace EksiSozlukAPI.Application.Repositories
         IQueryable<T> FindWhere(Expression<Func<T, bool>> filter);
         Task<T> FindSingleAsync(Expression<Func<T, bool>> filter);
         Task<T> FindByIdAsync(string id);
-
+        IQueryable<T> FindPaged(int pageNumber, int pageSize, Expression<Func<T, bool>> filter);
     }
 }

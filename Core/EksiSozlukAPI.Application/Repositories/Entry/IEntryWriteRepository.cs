@@ -4,5 +4,6 @@ namespace EksiSozlukAPI.Application.Repositories.Entry
 {
     public interface IEntryWriteRepository : IWriteRepository<E.Entry>
     {
+
     }
 }
