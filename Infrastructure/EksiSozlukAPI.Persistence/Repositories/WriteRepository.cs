@@ -38,9 +38,9 @@ namespace EksiSozlukAPI.Persistence.Repositories
             return entry.State == EntityState.Deleted;
         }
 
-        public async Task<bool> RemoveByIdAsync(string id)
+        public async Task<bool> RemoveByIdAsync(int id)
         {
-            T entity = await Table.FirstOrDefaultAsync(e => e.Id == Guid.Parse(id));
+            T entity = await Table.FirstOrDefaultAsync(e => e.Id == id);
             return Remove(entity);
         }
 

@@ -9,6 +9,7 @@ namespace EksiSozlukAPI.Domain.Entities
         public string Nickname { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public bool Verified { get; set; } = false;
         public ICollection<UserRole> UserRoles { get; set; }
         public ICollection<Entry> Entries { get; set; }
 

@@ -5,7 +5,7 @@ using EksiSozlukAPI.Application.Features.Commands.Title.CreateTitle;
 using EksiSozlukAPI.Application.Features.Commands.User.CreateUser;
 using EksiSozlukAPI.Domain.Entities;
 
-namespace EksiSozlukAPI.Persistence.Mapping
+namespace EksiSozlukAPI.Application.Mapping
 {
     public class MappingProfile : Profile
     {
@@ -16,10 +16,8 @@ namespace EksiSozlukAPI.Persistence.Mapping
             CreateMap<CreateEntryCommandRequest, Entry>().ReverseMap();
             CreateMap<Entry, EntryListItem>().ReverseMap();
             CreateMap<Title, EntryTitle>().ReverseMap().ForMember(t => t.Id, o => o.Ignore());
+            CreateMap<Title, TitleListItem>().ReverseMap();
             CreateMap<EntryUser, User>().ReverseMap();
-
-
-
         }
     }
 }

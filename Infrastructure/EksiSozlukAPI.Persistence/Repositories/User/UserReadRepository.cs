@@ -10,14 +10,14 @@ namespace EksiSozlukAPI.Persistence.Repositories.User
         {
         }
 
-        public List<string> GetUserRolesById(string userId)
+        public List<string> GetUserRolesById(int userId)
         {
             return (from user in Context.Users
                     join user_roles in Context.UserRoles
                     on user.Id equals user_roles.UserId
                     join role in Context.Roles
                     on user_roles.RoleId equals role.Id
-                    where user.Id == Guid.Parse(userId)
+                    where user.Id == userId
                     select role.Name).ToList();
         }
     }

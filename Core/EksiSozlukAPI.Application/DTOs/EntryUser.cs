@@ -8,7 +8,7 @@ namespace EksiSozlukAPI.Application.DTOs
 {
     public class EntryUser
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Nickname { get; set; }
     }
 }

@@ -11,9 +11,9 @@ namespace EksiSozlukAPI.Domain.Entities
     {
         public string Body { get; set; }
         public int FavCount { get; set; }
-        public Guid TitleId { get; set; }
+        public int TitleId { get; set; }
         public Title Title { get; set; }
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public User User { get; set; }
     }
 }

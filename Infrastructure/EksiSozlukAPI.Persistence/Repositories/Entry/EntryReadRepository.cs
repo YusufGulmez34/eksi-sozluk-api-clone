@@ -10,14 +10,14 @@ namespace EksiSozlukAPI.Persistence.Repositories.Entry
         {
         }
 
-        public List<E.Entry> GetEntryListByTitleId(int pageNumber, int pageSize, string titleId)
+        public List<E.Entry> GetEntryListByTitleId(int pageNumber, int pageSize, int titleId)
         {
             return (from entry in Context.Entries
                     join title in Context.Titles
                     on entry.TitleId equals title.Id
                     join user in Context.Users
                     on entry.UserId equals user.Id
-                    where entry.TitleId == Guid.Parse(titleId)                
+                    where entry.TitleId == titleId && user.Verified            
                     orderby entry.CreatedDate ascending                   
                     select new E.Entry
                     {

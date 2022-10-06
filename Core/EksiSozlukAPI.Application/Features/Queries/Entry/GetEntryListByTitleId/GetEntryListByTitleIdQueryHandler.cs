@@ -19,7 +19,7 @@ namespace EksiSozlukAPI.Application.Features.Queries.Entry.GetEntryListByTitleId
 
         public async Task<GetEntryListByTitleIdQueryResponse> Handle(GetEntryListByTitleIdQueryRequest request, CancellationToken cancellationToken)
         {
-            return await _entryService.GetEntryListByTitleId(request);
+            return await _entryService.GetEntryListByTitleIdAsync(request);
         }
     }
 }

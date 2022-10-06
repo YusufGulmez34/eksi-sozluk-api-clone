@@ -8,7 +8,7 @@ namespace EksiSozlukAPI.Application.DTOs
 {
     public class EntryListItem
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Body { get; set; }
         public int FavCount { get; set; }
         public EntryTitle Title { get; set; }

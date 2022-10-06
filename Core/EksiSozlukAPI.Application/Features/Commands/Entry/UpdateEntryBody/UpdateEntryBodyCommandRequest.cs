@@ -9,7 +9,7 @@ namespace EksiSozlukAPI.Application.Features.Commands.Entry.UpdateEntryBody
 {
     public class UpdateEntryBodyCommandRequest : IRequest<UpdateEntryBodyCommandResponse>
     {
-        public Guid EntryId { get; set; }
+        public int EntryId { get; set; }
         public string Body { get; set; }
     }
 }

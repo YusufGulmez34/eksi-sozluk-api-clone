@@ -10,7 +10,7 @@ namespace EksiSozlukAPI.Persistence.Repositories.User
         }
         public override async Task<bool> AddAsync(E.User entity)
         {
-            Guid roleId = Context.Roles.First(r => r.Name == "user").Id;
+            int roleId = Context.Roles.First(r => r.Name == "user").Id;
             entity.UserRoles.Add(new () { RoleId = roleId });
             await Context.SaveChangesAsync();
             return await base.AddAsync(entity);

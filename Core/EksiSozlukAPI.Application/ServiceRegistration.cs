@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using EksiSozlukAPI.Application.Mapping;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace EksiSozlukAPI.Application
         public static void AddApplicationServices(this IServiceCollection collection)
         {
             collection.AddMediatR(typeof(ServiceRegistration));
+            collection.AddAutoMapper(typeof(MappingProfile));
         }
     }
 }

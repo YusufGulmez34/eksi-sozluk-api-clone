@@ -19,7 +19,7 @@ namespace EksiSozlukAPI.Application.Features.Commands.Entry.UpdateEntryBody
 
         public async Task<UpdateEntryBodyCommandResponse> Handle(UpdateEntryBodyCommandRequest request, CancellationToken cancellationToken)
         {
-            return await _entryService.UpdateEntryBody(request);
+            return await _entryService.UpdateEntryBodyAsync(request);
         }
     }
 }

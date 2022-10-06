@@ -6,7 +6,7 @@ namespace EksiSozlukAPI.Domain.Entities
     {
         public string Name { get; set; }
         public int EntryCount { get; set; }
-        public Guid ChannelId { get; set; }
+        public int ChannelId { get; set; }
         public Channel Channel { get; set; }
         public ICollection<Entry> Entries { get; set; }
         public Title()

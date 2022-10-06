@@ -1,7 +1,6 @@
 ﻿using EksiSozlukAPI.Persistence.Contexts;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using EksiSozlukAPI.Persistence.Mapping;
 using EksiSozlukAPI.Application.Services;
 using EksiSozlukAPI.Persistence.Services;
 using EksiSozlukAPI.Application.Repositories.User;
@@ -24,6 +23,8 @@ namespace EksiSozlukAPI.Persistence
             services.AddScoped<IUserReadRepository, UserReadRepository>();
 
             services.AddScoped<ITitleWriteRepository, TitleWriteRepository>();
+            services.AddScoped<ITitleReadRepository, TitleReadRepository>();
+
 
             services.AddScoped<IEntryWriteRepository, EntryWriteRepository>();
             services.AddScoped<IEntryReadRepository, EntryReadRepository>();
@@ -39,7 +40,6 @@ namespace EksiSozlukAPI.Persistence
 
 
 
-            services.AddAutoMapper(typeof(MappingProfile));
         } 
     }
 }

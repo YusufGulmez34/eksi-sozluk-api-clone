@@ -33,6 +33,22 @@ namespace EksiSozlukAPI.Persistence.Contexts
                 .WithMany(r => r.UserRoles)
                 .HasForeignKey(ur => ur.RoleId);
 
+            modelBuilder.Entity<Role>().HasData(new List<Role>()
+            {
+                new () { Id = 1, Name = "admin" },
+                new () { Id = 2, Name = "user" }
+            });
+
+            modelBuilder.Entity<Channel>().HasData(new List<Channel>()
+            {
+                new () { Id = 1, Name = "spor" },
+                new () { Id = 2, Name = "siyaset" },
+                new () { Id = 3, Name = "sinema" },
+                new () { Id = 4, Name = "sanat" },
+                new () { Id = 5, Name = "bilim" },
+                new () { Id = 7, Name = "edebiyat" }
+            });
+
             base.OnModelCreating(modelBuilder);
         }
 

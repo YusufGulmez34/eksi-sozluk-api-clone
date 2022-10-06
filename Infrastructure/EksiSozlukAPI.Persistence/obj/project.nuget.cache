@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Hx+vaRRfAysn6MQCA9mqO6R2dk95yQLo8ATNU6HaekbkWc/n86PeMObs+hygK9TTT19ORnobqsnDoE7sSMfR7A==",
+  "dgSpecHash": "IIL6k5UmwcIu9z9G0kAYyIMjphb2xNXeMAgc9lTRMRPeD7wQoVyfkdP6w+MZ+vsHLftxmBLMercpIKX43joisQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Infrastructure\\EksiSozlukAPI.Persistence\\EksiSozlukAPI.Persistence.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\walte\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
-    "C:\\Users\\walte\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\walte\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\walte\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\walte\\.nuget\\packages\\cloudscribe.common.gdpr\\6.0.0\\cloudscribe.common.gdpr.6.0.0.nupkg.sha512",
     "C:\\Users\\walte\\.nuget\\packages\\cloudscribe.core.models\\6.0.0\\cloudscribe.core.models.6.0.0.nupkg.sha512",
     "C:\\Users\\walte\\.nuget\\packages\\cloudscribe.core.storage.efcore.common\\6.0.0\\cloudscribe.core.storage.efcore.common.6.0.0.nupkg.sha512",

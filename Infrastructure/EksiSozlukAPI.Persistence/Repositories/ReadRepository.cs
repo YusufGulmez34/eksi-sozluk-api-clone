@@ -28,9 +28,9 @@ namespace EksiSozlukAPI.Persistence.Repositories
             return query;
         }
 
-        public async Task<T> FindByIdAsync(string id)
+        public async Task<T> FindByIdAsync(int id)
         {
-            T entity = await Table.FirstOrDefaultAsync(e => e.Id == Guid.Parse(id));
+            T entity = await Table.FirstOrDefaultAsync(e => e.Id == id);
             if (entity == null)
             {
                 return null;

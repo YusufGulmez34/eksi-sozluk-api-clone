@@ -12,6 +12,6 @@ namespace EksiSozlukAPI.Application.Features.Queries.Entry.GetEntryListByTitleId
         {
         }
 
-        public string TitleId { get; set; }
+        public int TitleId { get; set; }
     }
 }

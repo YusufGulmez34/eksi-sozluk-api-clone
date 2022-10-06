@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using EksiSozlukAPI.Application.DTOs;
 using EksiSozlukAPI.Application.Features.Commands.Entry.CreateEntry;
+using EksiSozlukAPI.Application.Features.Commands.Entry.DeleteEntry;
 using EksiSozlukAPI.Application.Features.Commands.Entry.FavEntry;
 using EksiSozlukAPI.Application.Features.Commands.Entry.UpdateEntryBody;
 using EksiSozlukAPI.Application.Features.Queries.Entry.GetEntryListByTitleId;
@@ -25,6 +26,10 @@ namespace EksiSozlukAPI.Persistence.Services
             _entryReadRepository = entryReadRepository;
         }
 
+        public EntryService()
+        {
+        }
+
         public async Task<CreateEntryCommandResponse> AddEntryAsync(CreateEntryCommandRequest request)
         {
             E.Entry entry = _mapper.Map<E.Entry>(request);
@@ -47,37 +52,17 @@ namespace EksiSozlukAPI.Persistence.Services
 
         }
 
-        public async Task<GetEntryListByTitleIdQueryResponse> GetEntryListByTitleId(GetEntryListByTitleIdQueryRequest request)
+        public async Task<GetEntryListByTitleIdQueryResponse> GetEntryListByTitleIdAsync(GetEntryListByTitleIdQueryRequest request)
         {
             List<E.Entry> entryList = _entryReadRepository.GetEntryListByTitleId(request.PageNumber, request.PageSize, request.TitleId).ToList();
-            int totalCount = _entryReadRepository.Table.Count();
+            int totalCount = _entryReadRepository.Table.Where(e => e.TitleId == request.TitleId).Count();
             
             if (entryList == null || entryList.Count == 0)
             {
                 return new ErrorGetEntryListByTitleIdQueryResponse("Error");
             }
-            PagedData<List<EntryListItem>> pagedData = new();
-            pagedData.PageNumber = request.PageNumber;
-            
-            pagedData.TotalPages = (totalCount % request.PageSize) > 0 
-                                    ? totalCount / request.PageSize + 1 
-                                    : totalCount/ request.PageSize;
-
-            pagedData.FirstPage = pagedData.PageNumber == 1 
-                                    ? null 
-                                    : GenerateUri(request.TitleId, request.PageSize, 1);
-
-            pagedData.NextPage = pagedData.PageNumber == pagedData.TotalPages 
-                                    ? null 
-                                    : GenerateUri(request.TitleId, request.PageSize, pagedData.PageNumber + 1);
-
-            pagedData.PreviousPage = pagedData.PageNumber == 1
-                                    ? null
-                                    : GenerateUri(request.TitleId, request.PageSize, pagedData.PageNumber - 1);
-
-            pagedData.LastPage = pagedData.PageNumber == pagedData.TotalPages
-                                    ? null
-                                    : GenerateUri(request.TitleId, request.PageSize, pagedData.TotalPages);
+            string baseUrl = $"https://localhost:7181/api/Entry?TitleId={request.TitleId}&";
+            PagedData<List<EntryListItem>> pagedData = UrlGenerationService.UrlGenerator<List<EntryListItem>>(baseUrl, request, totalCount);
 
             pagedData.TotalRecords = totalCount;
             List <EntryListItem> entryListDto = _mapper.Map<List<EntryListItem>>(entryList);
@@ -87,9 +72,9 @@ namespace EksiSozlukAPI.Persistence.Services
 
         }
 
-        public async Task<UpdateEntryBodyCommandResponse> UpdateEntryBody(UpdateEntryBodyCommandRequest request)
+        public async Task<UpdateEntryBodyCommandResponse> UpdateEntryBodyAsync(UpdateEntryBodyCommandRequest request)
         {
-            E.Entry entry = await _entryReadRepository.FindByIdAsync(request.EntryId.ToString());
+            E.Entry entry = await _entryReadRepository.FindByIdAsync(request.EntryId);
             entry.Body = request.Body;
             bool result = _entryWriteRepository.Update(entry);
             if(!result) return new ErrorUpdateEntryBodyCommandResponse("Error");
@@ -102,6 +87,15 @@ namespace EksiSozlukAPI.Persistence.Services
             
             string baseUrl = "https://localhost:7181/api/Entry";
             return new Uri(baseUrl + $"?TitleId={TitleId}&PageSize={PageSize}&PageNumber={PageNumber}");
+        }
+
+        public async Task<DeleteEntryCommandResponse> DeleteEntry(DeleteEntryCommandRequest request)
+        {
+            bool result = await _entryWriteRepository.RemoveByIdAsync(request.Id);
+            if(!result) return new ErrorDeleteEntryCommandResponse("Error");
+
+            await _entryWriteRepository.SaveAsync();
+            return new SuccessDeleteEntryCommandResponse("Success");
         }
     }
 }

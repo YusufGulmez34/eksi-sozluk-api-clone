@@ -47,7 +47,7 @@ namespace EksiSozlukAPI.Persistence.Services
             E.User user = await _userRepository.FindSingleAsync(u => u.Nickname == loginUser.Nickname);
             if (user == null || user.Password != loginUser.Password) return null;
           
-            List<string> userRoles = _userRepository.GetUserRolesById(user.Id.ToString());
+            List<string> userRoles = _userRepository.GetUserRolesById(user.Id);
 
             List<Claim> claims = new();
             claims.Add(new Claim(ClaimTypes.Name, user.Nickname));

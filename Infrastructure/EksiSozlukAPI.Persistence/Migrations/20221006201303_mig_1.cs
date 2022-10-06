@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -13,7 +14,8 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "channels",
                 columns: table => new
                 {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    ıd = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
@@ -27,7 +29,8 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "roles",
                 columns: table => new
                 {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    ıd = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
@@ -41,10 +44,12 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "users",
                 columns: table => new
                 {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    ıd = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     nickname = table.Column<string>(type: "text", nullable: false),
                     email = table.Column<string>(type: "text", nullable: false),
                     password = table.Column<string>(type: "text", nullable: false),
+                    verified = table.Column<bool>(type: "boolean", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
@@ -57,10 +62,11 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "titles",
                 columns: table => new
                 {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    ıd = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     entry_count = table.Column<int>(type: "integer", nullable: false),
-                    channel_ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    channel_ıd = table.Column<int>(type: "integer", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
@@ -79,8 +85,8 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "user_roles",
                 columns: table => new
                 {
-                    user_ıd = table.Column<Guid>(type: "uuid", nullable: false),
-                    role_ıd = table.Column<Guid>(type: "uuid", nullable: false)
+                    user_ıd = table.Column<int>(type: "integer", nullable: false),
+                    role_ıd = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -103,11 +109,12 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "entries",
                 columns: table => new
                 {
-                    ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    ıd = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     body = table.Column<string>(type: "text", nullable: false),
                     fav_count = table.Column<int>(type: "integer", nullable: false),
-                    title_ıd = table.Column<Guid>(type: "uuid", nullable: false),
-                    user_ıd = table.Column<Guid>(type: "uuid", nullable: false),
+                    title_ıd = table.Column<int>(type: "integer", nullable: false),
+                    user_ıd = table.Column<int>(type: "integer", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
@@ -126,6 +133,28 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         principalTable: "users",
                         principalColumn: "ıd",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "channels",
+                columns: new[] { "ıd", "created_date", "name", "updated_date" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "spor", null },
+                    { 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "siyaset", null },
+                    { 3, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "sinema", null },
+                    { 4, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "sanat", null },
+                    { 5, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "bilim", null },
+                    { 7, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "edebiyat", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "roles",
+                columns: new[] { "ıd", "created_date", "name", "updated_date" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin", null },
+                    { 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user", null }
                 });
 
             migrationBuilder.CreateIndex(

@@ -9,6 +9,6 @@ namespace EksiSozlukAPI.Application.Features.Commands.Entry.FavEntry
 {
     public class FavEntryCommandRequest : IRequest<FavEntryCommandResponse>
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
     }
 }

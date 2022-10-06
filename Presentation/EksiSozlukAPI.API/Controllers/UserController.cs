@@ -1,10 +1,8 @@
 ﻿
 using EksiSozlukAPI.Application.Features.Commands.User.CreateUser;
-using EksiSozlukAPI.Application.Services;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace EksiSozlukAPI.API.Controllers
 {
@@ -20,7 +18,6 @@ namespace EksiSozlukAPI.API.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "user", AuthenticationSchemes = "admin")]
         public async Task<IActionResult> CreateUser(CreateUserCommandRequest createUser)
         {
             CreateUserCommandResponse response = await _mediator.Send(createUser);
