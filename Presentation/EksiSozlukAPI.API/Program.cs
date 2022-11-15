@@ -6,16 +6,29 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Security.Claims;
 using System.Text;
+using FluentValidation.AspNetCore;
+using EksiSozlukAPI.Application.Validation;
+using EksiSozlukAPI.Infrastructure.Filters;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
+            .ConfigureContainer<ContainerBuilder>(builder =>
+            {
+                builder.RegisterModule<AutofacBusinessModule>();
+            });
 
 // Add services to the container.
-builder.Services.AddPersistenceService();
+//builder.Services.AddPersistenceService();
 builder.Services.AddApplicationServices();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(opt => opt.Filters.Add<ValidationFilter>())
+                .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<CreateTitleValidator>())
+                .ConfigureApiBehaviorOptions(opt => opt.SuppressModelStateInvalidFilter = true);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
@@ -47,7 +60,8 @@ builder.Services.AddSwaggerGen(opt =>
 });
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer("admin", options => {
+    .AddJwtBearer("admin", options =>
+    {
         options.TokenValidationParameters = new()
         {
             ValidateIssuer = true,

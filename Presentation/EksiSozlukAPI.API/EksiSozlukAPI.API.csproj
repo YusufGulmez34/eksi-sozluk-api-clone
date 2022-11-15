@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\EksiSozlukAPI.Infrastructure\EksiSozlukAPI.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\EksiSozlukAPI.Persistence\EksiSozlukAPI.Persistence.csproj" />
   </ItemGroup>
 

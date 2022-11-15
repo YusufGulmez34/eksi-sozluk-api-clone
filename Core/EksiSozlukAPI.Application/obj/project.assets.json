@@ -8,10 +8,14 @@
           "Microsoft.CSharp": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.1/AutoMapper.dll": {}
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/AutoMapper.dll": {}
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
@@ -27,25 +31,83 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "FluentValidation/11.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.2.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.2.1",
+          "FluentValidation.DependencyInjectionExtensions": "11.2.1"
+        },
+        "compile": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "11.3.0",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/10.0.1": {
         "type": "package",
         "dependencies": {
           "MediatR.Contracts": "1.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MediatR.dll": {}
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/MediatR.dll": {}
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MediatR.Contracts/1.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MediatR.Extensions.Microsoft.DependencyInjection/10.0.1": {
@@ -82,10 +144,14 @@
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {}
+          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {}
+          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
@@ -94,10 +160,14 @@
       "Microsoft.EntityFrameworkCore.Abstractions/6.0.9": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.9": {
@@ -115,10 +185,14 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Caching.Memory/6.0.1": {
@@ -131,10 +205,14 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/6.0.0": {
@@ -144,10 +222,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -156,10 +238,14 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -175,19 +261,27 @@
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -200,10 +294,14 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/6.0.0": {
@@ -212,10 +310,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -227,10 +329,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Collections.Immutable.dll": {}
+          "lib/net6.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Collections.Immutable.dll": {}
+          "lib/net6.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -242,10 +348,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {}
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -254,10 +364,14 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -303,6 +417,65 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "FluentValidation/11.3.0": {
+      "sha512": "AlsfUkdIzSMA2v091K0gT1YjEwc7YR5pIA5yq7PnZivhoH3YETMhZbUySzsLbJKhj/E3ei6nEgtqdm00AVHXeg==",
+      "type": "package",
+      "path": "fluentvalidation/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.3.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/11.2.2": {
+      "sha512": "jU/MHXqg9cnOU18dY75vorP2c2WDKMan4zegOPsoc34xZVjzTEtXP0fKvkDEdeaChUVooNWuRr27u9w3sYbEFA==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/11.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/net6.0/FluentValidation.AspNetCore.dll",
+        "lib/net6.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.3.0": {
+      "sha512": "C7gtDO79JVRtZob4K4VvabpXEEcvxH6Bh3MzS/TAjoGlOu1/m93+NrAwzjWxUmPFMq+lk7/at+zu2uM8rB1tXg==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.11.3.0.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "MediatR/10.0.1": {
@@ -751,6 +924,9 @@
       "AutoMapper >= 12.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "EksiSozlukAPI.Domain >= 1.0.0",
+      "FluentValidation >= 11.3.0",
+      "FluentValidation.AspNetCore >= 11.2.2",
+      "FluentValidation.DependencyInjectionExtensions >= 11.3.0",
       "MediatR >= 10.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Microsoft.EntityFrameworkCore >= 6.0.9"
@@ -762,11 +938,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
+      "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
       "projectName": "EksiSozlukAPI.Application",
-      "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
+      "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
       "packagesPath": "C:\\Users\\walte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\obj\\",
+      "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\walte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -783,8 +959,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj": {
-              "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj"
+            "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj": {
+              "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj"
             }
           }
         }
@@ -807,6 +983,18 @@
             "target": "Package",
             "version": "[12.0.0, )"
           },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.3.0, )"
+          },
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[11.2.2, )"
+          },
+          "FluentValidation.DependencyInjectionExtensions": {
+            "target": "Package",
+            "version": "[11.3.0, )"
+          },
           "MediatR": {
             "target": "Package",
             "version": "[10.0.1, )"
@@ -826,7 +1014,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -835,7 +1024,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

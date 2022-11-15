@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
       "projectName": "EksiSozlukAPI.Domain",
-      "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
+      "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
       "packagesPath": "C:\\Users\\walte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\obj\\",
+      "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\walte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

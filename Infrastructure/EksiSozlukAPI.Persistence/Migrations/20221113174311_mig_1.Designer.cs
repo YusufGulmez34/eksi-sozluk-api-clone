@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EksiSozlukAPI.Persistence.Migrations
 {
     [DbContext(typeof(EksiSozlukAPIDbContext))]
-    [Migration("20221006201303_mig_1")]
+    [Migration("20221113174311_mig_1")]
     partial class mig_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,7 +29,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("ıd");
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
@@ -95,7 +95,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("ıd");
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
@@ -114,7 +114,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
 
                     b.Property<int>("TitleId")
                         .HasColumnType("integer")
-                        .HasColumnName("title_ıd");
+                        .HasColumnName("title_id");
 
                     b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("timestamp with time zone")
@@ -122,16 +122,16 @@ namespace EksiSozlukAPI.Persistence.Migrations
 
                     b.Property<int>("UserId")
                         .HasColumnType("integer")
-                        .HasColumnName("user_ıd");
+                        .HasColumnName("user_id");
 
                     b.HasKey("Id")
                         .HasName("pk_entries");
 
                     b.HasIndex("TitleId")
-                        .HasDatabaseName("ıx_entries_title_ıd");
+                        .HasDatabaseName("ix_entries_title_id");
 
                     b.HasIndex("UserId")
-                        .HasDatabaseName("ıx_entries_user_ıd");
+                        .HasDatabaseName("ix_entries_user_id");
 
                     b.ToTable("entries");
                 });
@@ -141,7 +141,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("ıd");
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
@@ -183,13 +183,13 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("ıd");
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int>("ChannelId")
                         .HasColumnType("integer")
-                        .HasColumnName("channel_ıd");
+                        .HasColumnName("channel_id");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone")
@@ -212,7 +212,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasName("pk_titles");
 
                     b.HasIndex("ChannelId")
-                        .HasDatabaseName("ıx_titles_channel_ıd");
+                        .HasDatabaseName("ix_titles_channel_id");
 
                     b.ToTable("titles");
                 });
@@ -222,7 +222,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("ıd");
+                        .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
@@ -263,16 +263,16 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 {
                     b.Property<int>("UserId")
                         .HasColumnType("integer")
-                        .HasColumnName("user_ıd");
+                        .HasColumnName("user_id");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("integer")
-                        .HasColumnName("role_ıd");
+                        .HasColumnName("role_id");
 
                     b.HasKey("UserId", "RoleId");
 
                     b.HasIndex("RoleId")
-                        .HasDatabaseName("ıx_user_roles_role_ıd");
+                        .HasDatabaseName("ix_user_roles_role_id");
 
                     b.ToTable("user_roles");
                 });
@@ -284,14 +284,14 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasForeignKey("TitleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_entries_titles_title_ıd");
+                        .HasConstraintName("fk_entries_titles_title_id");
 
                     b.HasOne("EksiSozlukAPI.Domain.Entities.User", "User")
                         .WithMany("Entries")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_entries_users_user_ıd");
+                        .HasConstraintName("fk_entries_users_user_id");
 
                     b.Navigation("Title");
 
@@ -305,7 +305,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasForeignKey("ChannelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_titles_channels_channel_ıd");
+                        .HasConstraintName("fk_titles_channels_channel_id");
 
                     b.Navigation("Channel");
                 });
@@ -317,14 +317,14 @@ namespace EksiSozlukAPI.Persistence.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_user_roles_roles_role_ıd");
+                        .HasConstraintName("fk_user_roles_roles_role_id");
 
                     b.HasOne("EksiSozlukAPI.Domain.Entities.User", "User")
                         .WithMany("UserRoles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
-                        .HasConstraintName("fk_user_roles_users_user_ıd");
+                        .HasConstraintName("fk_user_roles_users_user_id");
 
                     b.Navigation("Role");
 

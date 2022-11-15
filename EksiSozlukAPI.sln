@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.API", "Presen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.Infrastructure", "Infrastructure\EksiSozlukAPI.Infrastructure\EksiSozlukAPI.Infrastructure.csproj", "{52B09CF3-1866-48C1-8973-959364B46CBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B09CF3-1866-48C1-8973-959364B46CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B09CF3-1866-48C1-8973-959364B46CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B09CF3-1866-48C1-8973-959364B46CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B09CF3-1866-48C1-8973-959364B46CBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{0E87CC42-BA7E-4FD1-9216-45B34DF66804} = {80D64A3D-6DB3-4D75-951C-8808AF6C537F}
 		{40205DA3-8EDF-48B0-A808-F7E56D5E3EDD} = {9AAC5FC0-0A18-42F9-80F8-47B375EBAF75}
 		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3} = {2A65782A-D546-47B5-86A7-C2C6DFD1656C}
+		{52B09CF3-1866-48C1-8973-959364B46CBE} = {9AAC5FC0-0A18-42F9-80F8-47B375EBAF75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D35586B6-93C5-4E78-AF58-EFEEF1B17E59}

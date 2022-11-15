@@ -17,3 +17,22 @@ C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\Ek
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\ref\EksiSozlukAPI.Persistence.dll
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Application.dll
 C:\Users\walte\OneDrive\Masaüstü\EkşiSözlük\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Application.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Persistence.deps.json
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Persistence.runtimeconfig.json
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Persistence.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Persistence.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Application.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Domain.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Application.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\bin\Debug\net6.0\EksiSozlukAPI.Domain.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.csproj.AssemblyReference.cache
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.AssemblyInfoInputs.cache
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.AssemblyInfo.cs
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.csproj.CopyComplete
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\refint\EksiSozlukAPI.Persistence.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\EksiSozlukAPI.Persistence.genruntimeconfig.cache
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Persistence\obj\Debug\net6.0\ref\EksiSozlukAPI.Persistence.dll

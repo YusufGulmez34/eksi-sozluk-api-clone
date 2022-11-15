@@ -30,7 +30,6 @@ namespace EksiSozlukAPI.Persistence
             services.AddScoped<IEntryReadRepository, EntryReadRepository>();
 
 
-
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAuthService, AuthService>();
 

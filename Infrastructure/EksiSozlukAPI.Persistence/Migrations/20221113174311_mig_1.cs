@@ -14,7 +14,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "channels",
                 columns: table => new
                 {
-                    ıd = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -22,14 +22,14 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_channels", x => x.ıd);
+                    table.PrimaryKey("pk_channels", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "roles",
                 columns: table => new
                 {
-                    ıd = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -37,14 +37,14 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_roles", x => x.ıd);
+                    table.PrimaryKey("pk_roles", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "users",
                 columns: table => new
                 {
-                    ıd = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     nickname = table.Column<string>(type: "text", nullable: false),
                     email = table.Column<string>(type: "text", nullable: false),
@@ -55,29 +55,29 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_users", x => x.ıd);
+                    table.PrimaryKey("pk_users", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "titles",
                 columns: table => new
                 {
-                    ıd = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     name = table.Column<string>(type: "text", nullable: false),
                     entry_count = table.Column<int>(type: "integer", nullable: false),
-                    channel_ıd = table.Column<int>(type: "integer", nullable: false),
+                    channel_id = table.Column<int>(type: "integer", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_titles", x => x.ıd);
+                    table.PrimaryKey("pk_titles", x => x.id);
                     table.ForeignKey(
-                        name: "fk_titles_channels_channel_ıd",
-                        column: x => x.channel_ıd,
+                        name: "fk_titles_channels_channel_id",
+                        column: x => x.channel_id,
                         principalTable: "channels",
-                        principalColumn: "ıd",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -85,23 +85,23 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "user_roles",
                 columns: table => new
                 {
-                    user_ıd = table.Column<int>(type: "integer", nullable: false),
-                    role_ıd = table.Column<int>(type: "integer", nullable: false)
+                    user_id = table.Column<int>(type: "integer", nullable: false),
+                    role_id = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_user_roles", x => new { x.user_ıd, x.role_ıd });
+                    table.PrimaryKey("PK_user_roles", x => new { x.user_id, x.role_id });
                     table.ForeignKey(
-                        name: "fk_user_roles_roles_role_ıd",
-                        column: x => x.role_ıd,
+                        name: "fk_user_roles_roles_role_id",
+                        column: x => x.role_id,
                         principalTable: "roles",
-                        principalColumn: "ıd",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "fk_user_roles_users_user_ıd",
-                        column: x => x.user_ıd,
+                        name: "fk_user_roles_users_user_id",
+                        column: x => x.user_id,
                         principalTable: "users",
-                        principalColumn: "ıd",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -109,35 +109,35 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 name: "entries",
                 columns: table => new
                 {
-                    ıd = table.Column<int>(type: "integer", nullable: false)
+                    id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     body = table.Column<string>(type: "text", nullable: false),
                     fav_count = table.Column<int>(type: "integer", nullable: false),
-                    title_ıd = table.Column<int>(type: "integer", nullable: false),
-                    user_ıd = table.Column<int>(type: "integer", nullable: false),
+                    title_id = table.Column<int>(type: "integer", nullable: false),
+                    user_id = table.Column<int>(type: "integer", nullable: false),
                     created_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("pk_entries", x => x.ıd);
+                    table.PrimaryKey("pk_entries", x => x.id);
                     table.ForeignKey(
-                        name: "fk_entries_titles_title_ıd",
-                        column: x => x.title_ıd,
+                        name: "fk_entries_titles_title_id",
+                        column: x => x.title_id,
                         principalTable: "titles",
-                        principalColumn: "ıd",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "fk_entries_users_user_ıd",
-                        column: x => x.user_ıd,
+                        name: "fk_entries_users_user_id",
+                        column: x => x.user_id,
                         principalTable: "users",
-                        principalColumn: "ıd",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
                 table: "channels",
-                columns: new[] { "ıd", "created_date", "name", "updated_date" },
+                columns: new[] { "id", "created_date", "name", "updated_date" },
                 values: new object[,]
                 {
                     { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "spor", null },
@@ -150,7 +150,7 @@ namespace EksiSozlukAPI.Persistence.Migrations
 
             migrationBuilder.InsertData(
                 table: "roles",
-                columns: new[] { "ıd", "created_date", "name", "updated_date" },
+                columns: new[] { "id", "created_date", "name", "updated_date" },
                 values: new object[,]
                 {
                     { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin", null },
@@ -158,24 +158,24 @@ namespace EksiSozlukAPI.Persistence.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "ıx_entries_title_ıd",
+                name: "ix_entries_title_id",
                 table: "entries",
-                column: "title_ıd");
+                column: "title_id");
 
             migrationBuilder.CreateIndex(
-                name: "ıx_entries_user_ıd",
+                name: "ix_entries_user_id",
                 table: "entries",
-                column: "user_ıd");
+                column: "user_id");
 
             migrationBuilder.CreateIndex(
-                name: "ıx_titles_channel_ıd",
+                name: "ix_titles_channel_id",
                 table: "titles",
-                column: "channel_ıd");
+                column: "channel_id");
 
             migrationBuilder.CreateIndex(
-                name: "ıx_user_roles_role_ıd",
+                name: "ix_user_roles_role_id",
                 table: "user_roles",
-                column: "role_ıd");
+                column: "role_id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

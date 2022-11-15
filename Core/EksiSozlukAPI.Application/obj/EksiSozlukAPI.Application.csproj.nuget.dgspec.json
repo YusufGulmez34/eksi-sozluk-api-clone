@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj": {}
+    "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj": {
+    "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
+        "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
         "projectName": "EksiSozlukAPI.Application",
-        "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
+        "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\EksiSozlukAPI.Application.csproj",
         "packagesPath": "C:\\Users\\walte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\obj\\",
+        "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\walte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj": {
-                "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj"
+              "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj": {
+                "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj"
               }
             }
           }
@@ -52,6 +52,18 @@
               "target": "Package",
               "version": "[12.0.0, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -71,7 +83,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,18 +93,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj": {
+    "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
         "projectName": "EksiSozlukAPI.Domain",
-        "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
+        "projectPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\EksiSozlukAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\walte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\EkşiSözlük\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\obj\\",
+        "outputPath": "C:\\Users\\walte\\OneDrive\\Masaüstü\\New folder\\EksiSozlukAPI\\Core\\EksiSozlukAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\walte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,7 +138,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -134,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
