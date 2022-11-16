@@ -17,9 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Persistence",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.API", "Presentation\EksiSozlukAPI.API\EksiSozlukAPI.API.csproj", "{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EksiSozlukAPI.Infrastructure", "Infrastructure\EksiSozlukAPI.Infrastructure\EksiSozlukAPI.Infrastructure.csproj", "{52B09CF3-1866-48C1-8973-959364B46CBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukAPI.Infrastructure", "Infrastructure\EksiSozlukAPI.Infrastructure\EksiSozlukAPI.Infrastructure.csproj", "{52B09CF3-1866-48C1-8973-959364B46CBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksiSozlukTest", "EksiSozlukTest\EksiSozlukTest.csproj", "{E753549A-62D9-4695-A62D-1DAD86B63068}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A298AADA-EFD9-4BCB-83BD-B4943ED0DAF3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BE79D96-E12E-4AA5-8E5F-4F64C11FCC58}.Release|Any CPU.Build.0 = Release|Any CPU
 		{52B09CF3-1866-48C1-8973-959364B46CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52B09CF3-1866-48C1-8973-959364B46CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52B09CF3-1866-48C1-8973-959364B46CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52B09CF3-1866-48C1-8973-959364B46CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E753549A-62D9-4695-A62D-1DAD86B63068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E753549A-62D9-4695-A62D-1DAD86B63068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E753549A-62D9-4695-A62D-1DAD86B63068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E753549A-62D9-4695-A62D-1DAD86B63068}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

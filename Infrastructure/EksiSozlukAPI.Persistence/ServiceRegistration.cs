@@ -18,27 +18,6 @@ namespace EksiSozlukAPI.Persistence
         {
             services.AddDbContext<EksiSozlukAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
 
-
-            services.AddScoped<IUserWriteRepository, UserWriteRepository>();
-            services.AddScoped<IUserReadRepository, UserReadRepository>();
-
-            services.AddScoped<ITitleWriteRepository, TitleWriteRepository>();
-            services.AddScoped<ITitleReadRepository, TitleReadRepository>();
-
-
-            services.AddScoped<IEntryWriteRepository, EntryWriteRepository>();
-            services.AddScoped<IEntryReadRepository, EntryReadRepository>();
-
-
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IAuthService, AuthService>();
-
-            services.AddScoped<ITitleService, TitleService>();
-            services.AddScoped<IEntryService, EntryService>();
-
-
-
-
         } 
     }
 }

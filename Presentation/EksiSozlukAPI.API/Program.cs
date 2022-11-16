@@ -1,6 +1,5 @@
 using EksiSozlukAPI.Persistence;
 using EksiSozlukAPI.Application;
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -12,6 +11,8 @@ using EksiSozlukAPI.Infrastructure.Filters;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -22,7 +23,7 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
             });
 
 // Add services to the container.
-//builder.Services.AddPersistenceService();
+builder.Services.AddPersistenceService();
 builder.Services.AddApplicationServices();
 
 builder.Services.AddControllers(opt => opt.Filters.Add<ValidationFilter>())
@@ -86,8 +87,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
-
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
@@ -96,3 +95,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program
+{
+}

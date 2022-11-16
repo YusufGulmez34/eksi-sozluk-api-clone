@@ -20,12 +20,6 @@ namespace EksiSozlukAPI.Persistence
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.Register(c =>
-            {
-                var opt = new DbContextOptionsBuilder<EksiSozlukAPIDbContext>();
-                opt.UseNpgsql(Configuration.ConnectionString);
-                return new EksiSozlukAPIDbContext(opt.Options);
-            }).AsSelf().SingleInstance();
 
             builder.RegisterType<UserReadRepository>().As<IUserReadRepository>().SingleInstance();
             builder.RegisterType<UserWriteRepository>().As<IUserWriteRepository>().SingleInstance();
