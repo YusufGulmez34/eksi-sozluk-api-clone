@@ -7,21 +7,21 @@ using System.Text;
 
 namespace EksiSozlukTest
 {
-    public class UnitTest1 : IClassFixture<TestFactory<Program>>
+    public class UserTest : IClassFixture<TestFactory<Program>>
     {
         private TestFactory<Program> _factory;
         private HttpClient _client;
 
-        public UnitTest1(TestFactory<Program> factory)
+        public UserTest(TestFactory<Program> factory)
         {
             _factory = factory;
             _client = _factory.CreateClient();
         }
 
         [Fact]
-        public void UserLoginTest()
+        public void UserLogin_ShouldReturnSuccessResponse()
         {
-            UserCreateTest();
+            UserCreate_ShouldReturnSuccessResponse();
             var login = new LoginUserCommandRequest()
             {
                 Nickname = "string",
@@ -35,7 +35,7 @@ namespace EksiSozlukTest
         }
 
         [Fact]
-        public void UserCreateTest()
+        public void UserCreate_ShouldReturnSuccessResponse()
         {
 
             var create = new CreateUserCommandRequest()
@@ -47,9 +47,27 @@ namespace EksiSozlukTest
 
             var content = new StringContent(JsonConvert.SerializeObject(create), Encoding.UTF8, "application/json");
             var response = _client.PostAsync("https://localhost:7181/api/User", content).Result.Content.ReadAsStringAsync().Result;
-            var data = JsonConvert.DeserializeObject<LoginUserCommandResponse>(response);
+            var data = JsonConvert.DeserializeObject<CreateUserCommandResponse>(response);
 
             Assert.True(data.Success);
+        }
+
+        [Fact]
+        public void UserCreate_ShouldReturnErrorResponse()
+        {
+
+            var create = new CreateUserCommandRequest()
+            {
+                Nickname = "string",
+                Password = "string"
+                
+            };
+
+            var content = new StringContent(JsonConvert.SerializeObject(create), Encoding.UTF8, "application/json");
+            var response = _client.PostAsync("https://localhost:7181/api/User", content).Result.Content.ReadAsStringAsync().Result;
+            var data = JsonConvert.DeserializeObject<CreateUserCommandResponse>(response);
+
+            Assert.False(data.Success);
         }
     }
 }

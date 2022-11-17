@@ -10,3 +10,8 @@ C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiS
 C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\obj\Debug\net6.0\refint\EksiSozlukAPI.Infrastructure.dll
 C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\obj\Debug\net6.0\EksiSozlukAPI.Infrastructure.pdb
 C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\obj\Debug\net6.0\ref\EksiSozlukAPI.Infrastructure.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\bin\Debug\net6.0\EksiSozlukAPI.Application.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\bin\Debug\net6.0\EksiSozlukAPI.Domain.dll
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\bin\Debug\net6.0\EksiSozlukAPI.Application.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\bin\Debug\net6.0\EksiSozlukAPI.Domain.pdb
+C:\Users\walte\OneDrive\Masaüstü\New folder\EksiSozlukAPI\Infrastructure\EksiSozlukAPI.Infrastructure\obj\Debug\net6.0\EksiSozlukAPI.Infrastructure.csproj.CopyComplete

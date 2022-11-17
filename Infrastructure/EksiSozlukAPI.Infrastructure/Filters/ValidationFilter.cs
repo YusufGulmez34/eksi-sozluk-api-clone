@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EksiSozlukAPI.Application.Features;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace EksiSozlukAPI.Infrastructure.Filters
@@ -12,7 +13,8 @@ namespace EksiSozlukAPI.Infrastructure.Filters
                 var errors = context.ModelState.Where(x => x.Value.Errors.Any())
                                   .ToDictionary(e => e.Key, e => e.Value.Errors.Select(e => e.ErrorMessage))
                                   .ToArray();
-                context.Result = new BadRequestObjectResult(errors);
+                var data = new ResponseData<KeyValuePair<string, IEnumerable<string>>[]>(errors, false, "Expected errors");
+                context.Result = new BadRequestObjectResult(data);
                 return;
             }
             await next();

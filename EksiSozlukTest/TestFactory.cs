@@ -21,16 +21,12 @@ namespace EksiSozlukTest
             builder.UseEnvironment("Testing")
                 .ConfigureTestServices(services =>
                 {
-                    var descriptor = services.SingleOrDefault(
-                    d => d.ServiceType == typeof(DbContextOptions<EksiSozlukAPIDbContext>));
-
-                    if (descriptor != null)
-                    {
-                        services.Remove(descriptor);
-                    }
-                    var options = new DbContextOptionsBuilder<EksiSozlukAPIDbContext>()
-                                    .UseInMemoryDatabase("test").Options;
+                    var descriptor = services.SingleOrDefault(d => d.ServiceType == typeof(DbContextOptions<EksiSozlukAPIDbContext>));
+                    if (descriptor != null) services.Remove(descriptor);
+                    
+                    var options = new DbContextOptionsBuilder<EksiSozlukAPIDbContext>().UseInMemoryDatabase("test").Options;
                     services.AddScoped<EksiSozlukAPIDbContext>(p => new TestDbContext(options));
+
                     var serviceProvider = services.BuildServiceProvider();
                     using var scope = serviceProvider.CreateScope();
                     var scopedService = scope.ServiceProvider;
